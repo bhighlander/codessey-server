@@ -1,0 +1,7 @@
+[{
+    "model": "codesseyapi.category",
+    "pk": 1,
+    "fields": {
+        "label": "Python"
+    }
+}]

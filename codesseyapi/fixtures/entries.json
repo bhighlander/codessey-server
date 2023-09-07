@@ -1,0 +1,11 @@
+[{
+    "model": "codesseyapi.entry",
+    "pk": 1,
+    "fields": {
+        "title": "Test Entry",
+        "content": "This is a test entry",
+        "author": 1,
+        "publication_date": "2013-01-01",
+        "solved": false
+    }
+}]

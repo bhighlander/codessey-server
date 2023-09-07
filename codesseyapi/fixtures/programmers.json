@@ -1,0 +1,7 @@
+[{
+    "model": "codesseyapi.programmer",
+    "pk": 1,
+    "fields": {
+        "user": 1
+    }
+}]

@@ -5,6 +5,7 @@
         "title": "First comment",
         "content": "This is the first comment",
         "author": 1,
-        "post": 1
+        "publication_date": "2014-01-01T00:00:00Z",
+        "entry": 1
     }
 }]

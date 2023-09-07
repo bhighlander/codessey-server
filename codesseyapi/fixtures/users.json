@@ -3,7 +3,7 @@
     "pk": 1,
     "fields": {
         "password": "password",
-        "last_login": "null",
+        "last_login": "2015-11-01T00:00:00Z",
         "is_superuser": false,
         "username": "admin",
         "first_name": "admin",

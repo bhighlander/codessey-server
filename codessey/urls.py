@@ -18,9 +18,10 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls  import include
 from rest_framework import routers
-from codesseyapi.views import register_user, login_user
+from codesseyapi.views import register_user, login_user, EntryView
 
 router = routers.DefaultRouter(trailing_slash=False)
+router.register(r'entries', EntryView, 'entry')
 
 urlpatterns = [
     path('register', register_user),

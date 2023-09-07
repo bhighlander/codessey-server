@@ -18,11 +18,11 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls  import include
 from rest_framework import routers
-from codesseyapi.views import register_user, login_user, EntryView
+from codesseyapi.views import register_user, login_user, EntryView, CategoryView
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'entries', EntryView, 'entry')
-
+router.register(r'categories', CategoryView, 'category')
 
 urlpatterns = [
     path('register', register_user),

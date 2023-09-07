@@ -23,6 +23,7 @@ from codesseyapi.views import register_user, login_user, EntryView
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'entries', EntryView, 'entry')
 
+
 urlpatterns = [
     path('register', register_user),
     path('login', login_user),

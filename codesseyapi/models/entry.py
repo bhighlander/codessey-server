@@ -6,3 +6,4 @@ class Entry(models.Model):
     author = models.ForeignKey('Programmer', on_delete=models.CASCADE)
     publication_date = models.DateTimeField(auto_now_add=True)
     solved = models.BooleanField(default=False)
+    categories = models.ManyToManyField('Category', through='EntryCategory', related_name='entries')

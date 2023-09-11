@@ -32,7 +32,7 @@ def register_user(request):
     )
 
     token = Token.objects.create(user=programmer.user)
-    data = { 'token': token.key }
+    data = { 'token': token.key, 'valid': True }
     return Response(data)
 
 @api_view(['POST'])
@@ -46,7 +46,7 @@ def login_user(request):
 
     username = request.data['username']
     password = request.data['password']
-
+    print(request.data)
     authenticated_user = authenticate(username=username, password=password)
 
     if authenticated_user is not None:

@@ -41,16 +41,18 @@ class EntryView(ViewSet):
 
     def update(self, request, pk):
 
-        if "category_add" in request.data:
+        try:
             entry = Entry.objects.get(pk=pk)
+        except Entry.DoesNotExist:
+            return Response({'message': 'Entry does not exist'}, status=status.HTTP_404_NOT_FOUND)
+        if "category_add" in request.data:
             categories = Category.objects.get(pk=request.data["category_add"])
-            entry.categories.add(categories) #set resets it, add adds to it, remove removes it. try add_or_remove or something like that? see if you can combine with _or_
+            entry.categories.add(categories)
         elif "category_remove" in request.data:
             categories = Category.objects.get(pk=request.data["category_remove"])
             entry.categories.remove(categories)
         else:
             categories = request.data["categories"]
-            entry = Entry.objects.get(pk=pk)
             entry.title = request.data["title"]
             entry.content = request.data["content"]
             entry.solved = request.data["solved"]

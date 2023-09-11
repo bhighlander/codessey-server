@@ -13,6 +13,12 @@ class EntryView(ViewSet):
                 author = Programmer.objects.get(user=request.auth.user)
                 entries = entries.filter(author=author)
 
+            if "category" in request.query_params:
+                category_id = self.request.query_params.get('category')
+                if category_id.isnumeric():
+                    category_id = int(category_id)
+                    entries = entries.filter(categories=category_id)
+
             serializer = EntrySerializer(entries, many=True)
             return Response(serializer.data)
         except Entry.DoesNotExist as ex:

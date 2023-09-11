@@ -30,6 +30,24 @@ class CommentView(ViewSet):
 
         serializer = CommentSerializer(new_comment, context={'request': request})
         return Response(serializer.data)
+    
+    def update(self, request, pk=None):
+        comment = Comment.objects.get(pk=pk)
+        comment.title = request.data["title"]
+        comment.content = request.data["content"]
+        comment.save()
+
+        return Response({}, status=status.HTTP_204_NO_CONTENT)
+    
+    def destroy(self, request, pk=None):
+        try:
+            comment = Comment.objects.get(pk=pk)
+            comment.delete()
+
+            return Response(None, status=status.HTTP_204_NO_CONTENT)
+
+        except Comment.DoesNotExist as ex:
+            return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
 
 class CommentSerializer(serializers.ModelSerializer):
     class Meta:

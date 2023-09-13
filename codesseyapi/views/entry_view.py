@@ -89,6 +89,7 @@ class CategorySerializer(serializers.ModelSerializer):
 class EntrySerializer(serializers.ModelSerializer):
     categories = CategorySerializer(many=True)
     author = ProgrammerSerializer(many=False)
+    publication_date = serializers.DateTimeField(format="%m/%d/%Y")
     class Meta:
         model = Entry
         fields = ('id', 'title', 'content', 'author', 'publication_date', 'solved', 'categories')

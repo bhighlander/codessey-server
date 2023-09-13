@@ -50,6 +50,7 @@ class CommentView(ViewSet):
             return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
 
 class CommentSerializer(serializers.ModelSerializer):
+    publication_date = serializers.DateTimeField(format="%m/%d/%Y %I:%M %p")
     class Meta:
         model = Comment
         fields = ('id', 'title', 'content', 'author', 'publication_date', 'entry')

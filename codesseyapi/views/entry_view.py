@@ -57,11 +57,12 @@ class EntryView(ViewSet):
         elif "category_remove" in request.data:
             categories = Category.objects.get(pk=request.data["category_remove"])
             entry.categories.remove(categories)
+        elif "solved" in request.data:
+            entry.solved = request.data["solved"]
         else:
             categories = request.data["categories"]
             entry.title = request.data["title"]
             entry.content = request.data["content"]
-            entry.solved = request.data["solved"]
 
         entry.save()
 

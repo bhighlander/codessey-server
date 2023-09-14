@@ -54,12 +54,12 @@ class EntryView(ViewSet):
         if "category_add" in request.data:
             categories = Category.objects.get(pk=request.data["category_add"])
             entry.categories.add(categories)
-        elif "category_remove" in request.data:
+        if "category_remove" in request.data:
             categories = Category.objects.get(pk=request.data["category_remove"])
             entry.categories.remove(categories)
-        elif "solved" in request.data:
+        if "solved" in request.data:
             entry.solved = request.data["solved"]
-        else:
+        if "title" in request.data and "content" in request.data:
             categories = request.data["categories"]
             entry.title = request.data["title"]
             entry.content = request.data["content"]

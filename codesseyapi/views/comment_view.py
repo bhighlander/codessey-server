@@ -17,6 +17,14 @@ class CommentView(ViewSet):
             return Response(serializer.data)
         except Comment.DoesNotExist as ex:
             return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
+        
+    def retrieve(self, request, pk=None):
+        try:
+            comment = Comment.objects.get(pk=pk)
+            serializer = CommentSerializer(comment, context={'request': request})
+            return Response(serializer.data)
+        except Comment.DoesNotExist as ex:
+            return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
 
     def create(self, request):
         new_comment = Comment()

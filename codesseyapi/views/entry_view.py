@@ -77,6 +77,16 @@ class EntryView(ViewSet):
         except Entry.DoesNotExist as ex:
             return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
 
+    @action(methods=['get'], detail=False)
+    def unsolved_entries(self, request):
+        try:
+            author = Programmer.objects.get(user=request.auth.user)
+            entries = Entry.objects.filter(solved=False, author=author)
+            serializer = EntrySerializer(entries, many=True)
+            return Response(serializer.data)
+        except Entry.DoesNotExist as ex:
+            return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
+
 
 class ProgrammerSerializer(serializers.ModelSerializer):
     class Meta:

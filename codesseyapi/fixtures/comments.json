@@ -1,11 +1,167 @@
-[{
-    "model": "codesseyapi.comment",
-    "pk": 1,
-    "fields": {
-        "title": "First comment",
-        "content": "This is the first comment",
-        "author": 1,
-        "publication_date": "2014-01-01T00:00:00Z",
-        "entry": 1
+[
+    {
+        "model": "codesseyapi.comment",
+        "pk": 1,
+        "fields": {
+            "title": "Comment 1 for Entry 1",
+            "content": "This is a comment for entry 1.",
+            "author": 2,
+            "publication_date": "2023-09-18T19:50:37",
+            "entry": 1
+        }
+    },
+    {
+        "model": "codesseyapi.comment",
+        "pk": 2,
+        "fields": {
+            "title": "Comment 1 for Entry 2",
+            "content": "This is a comment for entry 2. Code snippet: arr = [x**2 for x in range(10)]",
+            "author": 2,
+            "publication_date": "2023-09-17T19:50:37",
+            "entry": 2
+        }
+    },
+    {
+        "model": "codesseyapi.comment",
+        "pk": 3,
+        "fields": {
+            "title": "Comment 2 for Entry 2",
+            "content": "This is a comment for entry 2. Code snippet: for i in range(5): print(i)",
+            "author": 2,
+            "publication_date": "2023-09-17T18:50:37",
+            "entry": 2
+        }
+    },
+    {
+        "model": "codesseyapi.comment",
+        "pk": 4,
+        "fields": {
+            "title": "Comment 1 for Entry 3",
+            "content": "This is a comment for entry 3.",
+            "author": 2,
+            "publication_date": "2023-09-16T19:50:37",
+            "entry": 3
+        }
+    },
+    {
+        "model": "codesseyapi.comment",
+        "pk": 5,
+        "fields": {
+            "title": "Comment 2 for Entry 3",
+            "content": "This is a comment for entry 3.",
+            "author": 2,
+            "publication_date": "2023-09-16T18:50:37",
+            "entry": 3
+        }
+    },
+    {
+        "model": "codesseyapi.comment",
+        "pk": 6,
+        "fields": {
+            "title": "Comment 3 for Entry 3",
+            "content": "This is a comment for entry 3. Code snippet: def greet(name): return f'Hello, {name}'",
+            "author": 2,
+            "publication_date": "2023-09-16T17:50:37",
+            "entry": 3
+        }
+    },
+    {
+        "model": "codesseyapi.comment",
+        "pk": 7,
+        "fields": {
+            "title": "Comment 1 for Entry 4",
+            "content": "This is a comment for entry 4.",
+            "author": 2,
+            "publication_date": "2023-09-15T19:50:37",
+            "entry": 4
+        }
+    },
+    {
+        "model": "codesseyapi.comment",
+        "pk": 8,
+        "fields": {
+            "title": "Comment 2 for Entry 4",
+            "content": "This is a comment for entry 4.",
+            "author": 2,
+            "publication_date": "2023-09-15T18:50:37",
+            "entry": 4
+        }
+    },
+    {
+        "model": "codesseyapi.comment",
+        "pk": 9,
+        "fields": {
+            "title": "Comment 3 for Entry 4",
+            "content": "This is a comment for entry 4.",
+            "author": 2,
+            "publication_date": "2023-09-15T17:50:37",
+            "entry": 4
+        }
+    },
+    {
+        "model": "codesseyapi.comment",
+        "pk": 10,
+        "fields": {
+            "title": "Comment 1 for Entry 5",
+            "content": "This is a comment for entry 5.",
+            "author": 2,
+            "publication_date": "2023-09-14T19:50:37",
+            "entry": 5
+        }
+    },
+    {
+        "model": "codesseyapi.comment",
+        "pk": 11,
+        "fields": {
+            "title": "Comment 1 for Entry 6",
+            "content": "This is a comment for entry 6.",
+            "author": 2,
+            "publication_date": "2023-09-13T19:50:37",
+            "entry": 6
+        }
+    },
+    {
+        "model": "codesseyapi.comment",
+        "pk": 12,
+        "fields": {
+            "title": "Comment 2 for Entry 6",
+            "content": "This is a comment for entry 6. Code snippet: arr = [x**2 for x in range(10)]",
+            "author": 2,
+            "publication_date": "2023-09-13T18:50:37",
+            "entry": 6
+        }
+    },
+    {
+        "model": "codesseyapi.comment",
+        "pk": 13,
+        "fields": {
+            "title": "Comment 1 for Entry 7",
+            "content": "This is a comment for entry 7.",
+            "author": 2,
+            "publication_date": "2023-09-12T19:50:37",
+            "entry": 7
+        }
+    },
+    {
+        "model": "codesseyapi.comment",
+        "pk": 14,
+        "fields": {
+            "title": "Comment 2 for Entry 7",
+            "content": "This is a comment for entry 7.",
+            "author": 2,
+            "publication_date": "2023-09-12T18:50:37",
+            "entry": 7
+        }
+    },
+    {
+        "model": "codesseyapi.comment",
+        "pk": 15,
+        "fields": {
+            "title": "Comment 1 for Entry 8",
+            "content": "This is a comment for entry 8.",
+            "author": 2,
+            "publication_date": "2023-09-11T19:50:37",
+            "entry": 8
+        }
     }
-}]
+]

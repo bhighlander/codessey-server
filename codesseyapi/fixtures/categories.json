@@ -1,7 +1,82 @@
-[{
-    "model": "codesseyapi.category",
-    "pk": 1,
-    "fields": {
-        "label": "Python"
+[
+    {
+        "model": "codesseyapi.category",
+        "pk": 1,
+        "fields": {
+            "label": "Python",
+            "author": 2
+        }
+    },
+    {
+        "model": "codesseyapi.category",
+        "pk": 2,
+        "fields": {
+            "label": "JavaScript",
+            "author": 2
+        }
+    },
+    {
+        "model": "codesseyapi.category",
+        "pk": 3,
+        "fields": {
+            "label": "Bug",
+            "author": 2
+        }
+    },
+    {
+        "model": "codesseyapi.category",
+        "pk": 4,
+        "fields": {
+            "label": "Test",
+            "author": 2
+        }
+    },
+    {
+        "model": "codesseyapi.category",
+        "pk": 5,
+        "fields": {
+            "label": "DevOps",
+            "author": 2
+        }
+    },
+    {
+        "model": "codesseyapi.category",
+        "pk": 6,
+        "fields": {
+            "label": "React",
+            "author": 2
+        }
+    },
+    {
+        "model": "codesseyapi.category",
+        "pk": 7,
+        "fields": {
+            "label": "Django",
+            "author": 2
+        }
+    },
+    {
+        "model": "codesseyapi.category",
+        "pk": 8,
+        "fields": {
+            "label": "Frontend",
+            "author": 2
+        }
+    },
+    {
+        "model": "codesseyapi.category",
+        "pk": 9,
+        "fields": {
+            "label": "Backend",
+            "author": 2
+        }
+    },
+    {
+        "model": "codesseyapi.category",
+        "pk": 10,
+        "fields": {
+            "label": "Database",
+            "author": 2
+        }
     }
-}]
+]

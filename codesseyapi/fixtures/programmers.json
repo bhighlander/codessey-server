@@ -4,4 +4,11 @@
     "fields": {
         "user": 1
     }
+},
+{
+    "model": "codesseyapi.programmer",
+    "pk": 2,
+    "fields": {
+        "user": 2
+    }
 }]

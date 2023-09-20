@@ -1,11 +1,156 @@
-[{
-    "model": "codesseyapi.comment",
-    "pk": 1,
-    "fields": {
-        "title": "First comment",
-        "content": "This is the first comment",
-        "author": 1,
-        "publication_date": "2014-01-01T00:00:00Z",
-        "entry": 1
+[
+    {
+        "model": "codesseyapi.comment",
+        "pk": 1,
+        "fields": {
+            "title": "Security Patch Details",
+            "content": "Refined the UI elements for better accessibility.",
+            "author": 2,
+            "publication_date": "2023-09-18T16:47:41",
+            "entry": 1
+        }
+    },
+    {
+        "model": "codesseyapi.comment",
+        "pk": 2,
+        "fields": {
+            "title": "API Fetch Solved",
+            "content": "Details of how the security vulnerability was patched.",
+            "author": 2,
+            "publication_date": "2023-09-17T07:47:41",
+            "entry": 2
+        }
+    },
+    {
+        "model": "codesseyapi.comment",
+        "pk": 3,
+        "fields": {
+            "title": "Script Modification",
+            "content": "Adjusted the SQL query to properly filter the results.",
+            "author": 2,
+            "publication_date": "2023-09-19T15:47:41",
+            "entry": 2
+        }
+    },
+    {
+        "model": "codesseyapi.comment",
+        "pk": 4,
+        "fields": {
+            "title": "Code Review Notes",
+            "content": "Refined the UI elements for better accessibility.",
+            "author": 2,
+            "publication_date": "2023-09-18T10:47:41",
+            "entry": 2
+        }
+    },
+    {
+        "model": "codesseyapi.comment",
+        "pk": 5,
+        "fields": {
+            "title": "Backend Tweak",
+            "content": "Managed to resolve the API fetch issue by updating the endpoint.",
+            "author": 2,
+            "publication_date": "2023-09-19T00:47:41",
+            "entry": 3
+        }
+    },
+    {
+        "model": "codesseyapi.comment",
+        "pk": 6,
+        "fields": {
+            "title": "Backend Tweak",
+            "content": "Backend logic has been optimized for better performance.",
+            "author": 2,
+            "publication_date": "2023-09-17T00:47:41",
+            "entry": 3
+        }
+    },
+    {
+        "model": "codesseyapi.comment",
+        "pk": 7,
+        "fields": {
+            "title": "UI Elements Refined",
+            "content": "Addressed some concerns raised during code review.",
+            "author": 2,
+            "publication_date": "2023-09-16T17:47:41",
+            "entry": 4
+        }
+    },
+    {
+        "model": "codesseyapi.comment",
+        "pk": 8,
+        "fields": {
+            "title": "API Fetch Solved",
+            "content": "Refined the UI elements for better accessibility.",
+            "author": 2,
+            "publication_date": "2023-09-17T01:47:41",
+            "entry": 5
+        }
+    },
+    {
+        "model": "codesseyapi.comment",
+        "pk": 9,
+        "fields": {
+            "title": "API Fetch Solved",
+            "content": "Addressed some concerns raised during code review.",
+            "author": 2,
+            "publication_date": "2023-09-17T05:47:41",
+            "entry": 6
+        }
+    },
+    {
+        "model": "codesseyapi.comment",
+        "pk": 10,
+        "fields": {
+            "title": "Code Review Notes",
+            "content": "The Python script was modified to better handle exceptions. Code snippet: `import { useState } from 'React';`",
+            "author": 2,
+            "publication_date": "2023-09-17T08:47:41",
+            "entry": 6
+        }
+    },
+    {
+        "model": "codesseyapi.comment",
+        "pk": 11,
+        "fields": {
+            "title": "Query Adjusted",
+            "content": "Managed to resolve the API fetch issue by updating the endpoint.",
+            "author": 2,
+            "publication_date": "2023-09-21T20:47:41",
+            "entry": 6
+        }
+    },
+    {
+        "model": "codesseyapi.comment",
+        "pk": 12,
+        "fields": {
+            "title": "Backend Tweak",
+            "content": "State is now updating as expected after adding a dependency array.",
+            "author": 2,
+            "publication_date": "2023-09-23T15:47:41",
+            "entry": 7
+        }
+    },
+    {
+        "model": "codesseyapi.comment",
+        "pk": 13,
+        "fields": {
+            "title": "Script Modification",
+            "content": "Managed to resolve the API fetch issue by updating the endpoint. Code snippet: `SELECT * FROM users WHERE id = 1;`",
+            "author": 2,
+            "publication_date": "2023-09-19T06:47:41",
+            "entry": 7
+        }
+    },
+    {
+        "model": "codesseyapi.comment",
+        "pk": 14,
+        "fields": {
+            "title": "Script Modification",
+            "content": "The Python script was modified to better handle exceptions. Code snippet: `SELECT * FROM users WHERE id = 1;`",
+            "author": 2,
+            "publication_date": "2023-09-25T02:47:41",
+            "entry": 8
+        }
     }
-}]
+]

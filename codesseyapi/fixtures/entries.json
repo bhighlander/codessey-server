@@ -1,11 +1,90 @@
-[{
-    "model": "codesseyapi.entry",
-    "pk": 1,
-    "fields": {
-        "title": "Test Entry",
-        "content": "This is a test entry",
-        "author": 1,
-        "publication_date": "2013-01-01",
-        "solved": false
+[
+    {
+        "model": "codesseyapi.entry",
+        "pk": 1,
+        "fields": {
+            "title": "API Issue",
+            "content": "Encountered a 404 error while trying to fetch data from the API.",
+            "author": 2,
+            "publication_date": "2023-09-18T19:47:41",
+            "solved": false
+        }
+    },
+    {
+        "model": "codesseyapi.entry",
+        "pk": 2,
+        "fields": {
+            "title": "Database Error",
+            "content": "SQL query is not returning the expected results.",
+            "author": 2,
+            "publication_date": "2023-09-17T19:47:41",
+            "solved": false
+        }
+    },
+    {
+        "model": "codesseyapi.entry",
+        "pk": 3,
+        "fields": {
+            "title": "React Bug",
+            "content": "State is not updating as expected in a React component.",
+            "author": 2,
+            "publication_date": "2023-09-16T19:47:41",
+            "solved": false
+        }
+    },
+    {
+        "model": "codesseyapi.entry",
+        "pk": 4,
+        "fields": {
+            "title": "Python Script",
+            "content": "Created a Python script to automate a routine task.",
+            "author": 2,
+            "publication_date": "2023-09-15T19:47:41",
+            "solved": false
+        }
+    },
+    {
+        "model": "codesseyapi.entry",
+        "pk": 5,
+        "fields": {
+            "title": "Code Review",
+            "content": "Reviewed a colleague's pull request and provided feedback.",
+            "author": 2,
+            "publication_date": "2023-09-14T19:47:41",
+            "solved": false
+        }
+    },
+    {
+        "model": "codesseyapi.entry",
+        "pk": 6,
+        "fields": {
+            "title": "Frontend Update",
+            "content": "Updated the frontend to improve user experience.",
+            "author": 2,
+            "publication_date": "2023-09-13T19:47:41",
+            "solved": false
+        }
+    },
+    {
+        "model": "codesseyapi.entry",
+        "pk": 7,
+        "fields": {
+            "title": "Backend Optimization",
+            "content": "Optimized some backend logic to improve performance.",
+            "author": 2,
+            "publication_date": "2023-09-12T19:47:41",
+            "solved": false
+        }
+    },
+    {
+        "model": "codesseyapi.entry",
+        "pk": 8,
+        "fields": {
+            "title": "Security Patch",
+            "content": "Fixed a security vulnerability in the code.",
+            "author": 2,
+            "publication_date": "2023-09-11T19:47:41",
+            "solved": false
+        }
     }
-}]
+]

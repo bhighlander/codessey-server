@@ -18,12 +18,13 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls  import include
 from rest_framework import routers
-from codesseyapi.views import register_user, login_user, EntryView, CategoryView, CommentView
+from codesseyapi.views import register_user, login_user, EntryView, CategoryView, CommentView, TodoView
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'entries', EntryView, 'entry')
 router.register(r'categories', CategoryView, 'category')
 router.register(r'comments', CommentView, 'comment')
+router.register(r'todos', TodoView, 'todo')
 
 urlpatterns = [
     path('register', register_user),

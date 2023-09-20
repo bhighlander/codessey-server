@@ -1,0 +1,57 @@
+[
+    {
+        "model": "codesseyapi.todo",
+        "pk": 1,
+        "fields": {
+            "content": "Refactor legacy code",
+            "created_at": "2023-09-18T19:40:51",
+            "completed_at": null,
+            "author": 2,
+            "done": false
+        }
+    },
+    {
+        "model": "codesseyapi.todo",
+        "pk": 2,
+        "fields": {
+            "content": "Implement a new API endpoint",
+            "created_at": "2023-09-17T19:40:51",
+            "completed_at": null,
+            "author": 2,
+            "done": false
+        }
+    },
+    {
+        "model": "codesseyapi.todo",
+        "pk": 3,
+        "fields": {
+            "content": "Write unit tests for a feature",
+            "created_at": "2023-09-16T19:40:51",
+            "completed_at": null,
+            "author": 2,
+            "done": false
+        }
+    },
+    {
+        "model": "codesseyapi.todo",
+        "pk": 4,
+        "fields": {
+            "content": "Optimize database queries",
+            "created_at": "2023-09-15T19:40:51",
+            "completed_at": null,
+            "author": 2,
+            "done": false
+        }
+    },
+    {
+        "model": "codesseyapi.todo",
+        "pk": 5,
+        "fields": {
+            "content": "Debug a frontend issue",
+            "created_at": "2023-09-14T19:40:51",
+            "completed_at": null,
+            "author": 2,
+            "done": false
+        }
+    }
+]

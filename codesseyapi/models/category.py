@@ -2,3 +2,4 @@ from django.db import models
 
 class Category(models.Model):
     label = models.CharField(max_length=100)
+    author = models.ForeignKey('Programmer', on_delete=models.CASCADE)

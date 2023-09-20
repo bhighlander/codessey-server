@@ -3,7 +3,7 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
 from django.db.models.functions import Lower
-from codesseyapi.models import Category
+from codesseyapi.models import Category, Programmer
 
 class CategoryView(ViewSet):
     def list(self, request):
@@ -30,6 +30,8 @@ class CategoryView(ViewSet):
     def create(self, request):
         new_category = Category()
         new_category.label = request.data["label"]
+        author = Programmer.objects.get(user=request.auth.user)
+        new_category.author = author
         new_category.save()
 
         serializer = CategorySerializer(new_category, context={'request': request})

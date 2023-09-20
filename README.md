@@ -23,7 +23,7 @@ Codessey is a comprehensive full-stack platform designed to aid programmers in i
 
 ## Screenshots
 
-![Home Page](./screenshots/home.png)
+![Home Page](./screenshots/home_page.png)
 ![Entries Page](./screenshots/all_entries.png)
 ![Entry Detail Page](./screenshots/entry_details.png)
 ![Categories Page](./screenshots/categories.png)

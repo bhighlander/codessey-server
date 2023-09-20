@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 from rest_framework import status
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
@@ -8,7 +8,8 @@ from codesseyapi.models import Todo, Programmer
 class TodoView(ViewSet):
     def list(self, request):
         try:
-            todos = Todo.objects.order_by('-created_at')
+            three_days_ago = datetime.now() - timedelta(days=3)
+            todos = Todo.objects.exclude(done=True, completed_at__lt=three_days_ago).order_by('-created_at')
 
             serializer = TodoSerializer(todos, many=True, context={'request': request})
             return Response(serializer.data)

@@ -19,7 +19,7 @@ Codessey is a comprehensive full-stack platform designed to aid programmers in i
 
 - [Client side code](https://github.com/bhighlander/codessey-client)
 - [ERD](https://dbdiagram.io/d/Codessey-64f76c3502bd1c4a5e04c718)
-- [Wireframe](https://www.figma.com/file/uD5Ql9MYiwsj6XPuNKgp9z/ShutterBug-Capstone?type=design&node-id=0%3A1&mode=design&t=tGzGgnQLe3fFSQTR-1)
+- [Wireframe](https://www.figma.com/file/PijgTcBzl4I5BG5jTpEHP0/Codessey?type=design&node-id=0-1&mode=design&t=bgQP6PN9EEtEuO7l-0)
 
 ## Screenshots
 

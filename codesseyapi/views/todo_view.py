@@ -40,7 +40,12 @@ class TodoView(ViewSet):
         todo = Todo.objects.get(pk=pk)
         todo.content = request.data["content"]
         todo.done = request.data["done"]
-        todo.completed_at = request.data["completed_at"] if request.data["done"] else None
+        
+        if todo.done:
+            todo.completed_at = datetime.now()
+        else:
+            todo.completed_at = None
+
         todo.save()
 
         return Response({}, status=status.HTTP_204_NO_CONTENT)

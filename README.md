@@ -17,6 +17,7 @@ Codessey is a comprehensive full-stack platform designed to aid programmers in i
 
 ## Relevant Links
 
+- Deployed Application - *coming soon!*
 - [Client side code](https://github.com/bhighlander/codessey-client)
 - [ERD](https://dbdiagram.io/d/Codessey-64f76c3502bd1c4a5e04c718)
 - [Wireframe](https://www.figma.com/file/PijgTcBzl4I5BG5jTpEHP0/Codessey?type=design&node-id=0-1&mode=design&t=bgQP6PN9EEtEuO7l-0)

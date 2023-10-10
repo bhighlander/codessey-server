@@ -58,8 +58,7 @@ REST_FRAMEWORK = {
 
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',
-    'http://127.0.0.1:3000',
-    'https://codessey-bqw5g.ondigitalocean.app/'
+    'http://127.0.0.1:3000'
 )
 
 # UPDATE THIS
